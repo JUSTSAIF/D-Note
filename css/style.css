@@ -1,0 +1,264 @@
+body {
+    background-color: rgb(3, 2, 7);
+    /* direction: rtl; */
+    font-family: 'Cairo', sans-serif;
+
+}
+
+/* body:lang(ar) { 
+    font-family: 'Cairo', sans-serif;
+} */
+    
+/*  Image Style || W3 */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 62px;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/*  NavBar Slider */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Nav Bar Button */
+
+#NavbarBuuton {
+    font-size: 30px;
+    cursor: pointer;
+    color: #63b079;
+    margin-left: 10px;
+}
+
+
+/* title of item in page */
+
+#form-title-page:lang(ar) {
+    color: linen;
+    float: right ;
+}
+
+#hr-index {
+    margin-top: 60px;
+}
+
+/*  Set into Div All Data*/
+
+#AllData {
+    /* margin-top: 20px; */
+    background-color: rgba(160, 102, 160, 0.267);
+    width: 100%;
+    height: 500px;
+    border: 1px solid rgb(129, 77, 252);
+    color: rgb(212, 212, 212);
+    resize: none;
+    padding: 10px;
+}
+
+#res-loop-allTitles {
+    overflow: auto;
+    background-color: rgba(89, 76, 209, 0.178);
+    width: 100%;
+    height: 520px;
+    margin-top: 62px;
+    border: 1px solid rgba(139, 209, 236, 0.24);
+}
+
+
+#Item {
+    color: seashell;
+    text-align: center;
+    background-color: rgba(132, 132, 255, 0.493);
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 6px;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+    cursor: pointer;
+}
+
+#Item:hover {
+    background-color: rgba(144, 103, 168, 0.445);
+    border: 1px solid rgba(255, 0, 0, 0.24);
+    position: relative;
+    animation: mymove 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 10px;}
+  }
+  
+/* new.php Style page */
+
+#Uploadinfo {
+    width: 270px;
+    height: 50px;
+    padding-top: 13px;
+    text-align: center;
+    background-color: rgba(38, 23, 241, 0.137);
+    color: cornsilk;
+    z-index: 9999999999999;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+    cursor: pointer;
+}

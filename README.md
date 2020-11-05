@@ -8,7 +8,7 @@ Created in ‎2020/3/19
 
 
 ![program pic](https://github.com/JUSTSAIF/D-Note/blob/main/Pic.png?raw=true)
-
+There's another pages but I haven't taken pictures for...
 
 
 
